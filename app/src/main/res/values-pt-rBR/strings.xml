@@ -225,7 +225,7 @@
     <string name="settings_about_openpgp_label">Padrão OpenPGP</string>
     <string name="settings_about_openpgp_value">RFC 4880 + 9580</string>
     <string name="settings_about_crypto_label">Biblioteca de criptografia</string>
-    <string name="settings_about_crypto_value">Bouncy Castle 1.78.1</string>
+    <string name="settings_about_crypto_value">Bouncy Castle 1.85</string>
     <string name="settings_about_replay_onboarding_title">Mostrar o tour de boas-vindas novamente</string>
     <string name="settings_about_replay_onboarding_subtitle">Reproduzir a introdução de primeira execução</string>
     <string name="settings_about_reset_tips_title">Redefinir dicas</string>
@@ -810,7 +810,7 @@ As mensagens são criptografadas simetricamente com AES-256 em modo AEAD OCB (RF
 
 O PGPony também consegue ler e importar chaves RSA e DSA legadas para interoperar com instalações OpenPGP mais antigas, mas só gera chaves modernas baseadas em curvas para novas identidades.
 
-Toda a criptografia é executada pelo Bouncy Castle 1.78.1, uma biblioteca padrão do setor auditada e usada em sistemas corporativos e governamentais em todo o mundo.</string>
+Toda a criptografia é executada pelo Bouncy Castle 1.85, uma biblioteca padrão do setor auditada e usada em sistemas corporativos e governamentais em todo o mundo.</string>
 
     <!-- ════════════════════════════════════════════════════════════════
          MainActivity tabs — adds Contacts (was missing earlier)
@@ -830,7 +830,7 @@ Toda a criptografia é executada pelo Bouncy Castle 1.78.1, uma biblioteca padr�
     <string name="security_info_block_algorithms_body">Chaves novas usam Ed25519 para assinatura e Curve25519 para criptografia — as mesmas curvas elípticas usadas por Signal, SSH e TLS 1.3. A criptografia simétrica usa AES-256 com modo AEAD OCB (RFC 9580).</string>
 
     <string name="security_info_block_library_title">Construído sobre Bouncy Castle</string>
-    <string name="security_info_block_library_body">Toda a criptografia passa pelo Bouncy Castle 1.78.1, a biblioteca padrão do setor para criptografia Java, usada em sistemas corporativos e governamentais em todo o mundo. O PGPony não inventa sua própria criptografia.</string>
+    <string name="security_info_block_library_body">Toda a criptografia passa pelo Bouncy Castle 1.85, a biblioteca padrão do setor para criptografia Java, usada em sistemas corporativos e governamentais em todo o mundo. O PGPony não inventa sua própria criptografia.</string>
 
     <string name="security_info_block_on_device_title">Tudo permanece no seu dispositivo</string>
     <string name="security_info_block_on_device_body">Suas chaves não saem do seu celular a menos que você as compartilhe explicitamente. O PGPony não tem servidor, sistema de contas nem análises. O app não exige permissão de Internet para nenhum recurso central de criptografia.</string>
