@@ -266,7 +266,7 @@
     <string name="settings_about_openpgp_label">OpenPGP Standard</string>
     <string name="settings_about_openpgp_value">RFC 4880 + 9580</string>
     <string name="settings_about_crypto_label">Crypto Library</string>
-    <string name="settings_about_crypto_value">Bouncy Castle 1.78.1</string>
+    <string name="settings_about_crypto_value">Bouncy Castle 1.85</string>
     <string name="settings_about_replay_onboarding_title">Show Welcome Tour Again</string>
     <string name="settings_about_replay_onboarding_subtitle">Replay the first-run intro</string>
     <string name="settings_about_reset_tips_title">Reset Tips</string>
