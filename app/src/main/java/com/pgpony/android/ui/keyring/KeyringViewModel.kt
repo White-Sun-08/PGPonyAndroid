@@ -384,6 +384,28 @@ class KeyringViewModel(private val repo: KeyRepository) : ViewModel() {
     }
 
     /**
+     * Re-query the list WITHOUT the loading flash. The Keyring caches its
+     * keys and reloads only on its own mutations, so a delete or a trust
+     * change made on the Key Detail screen left the row stale until an app
+     * reload (CertainBot, RC4). KeyringScreen calls this each time it
+     * re-enters composition, including the pop back from Key Detail, so
+     * those changes show at once. No isLoading toggle means no spinner on
+     * return.
+     */
+    fun reloadSilently() {
+        viewModelScope.launch {
+            try {
+                val keys = repo.getAllKeys()
+                _state.value = _state.value.copy(
+                    allKeys = keys,
+                    legacyCompositeFingerprints = computeLegacyCompositeFingerprints(keys)
+                )
+            } catch (_: Exception) {
+            }
+        }
+    }
+
+    /**
      * Phase A8.5 — user-initiated refresh from PullToRefreshBox.
      *
      * Re-reads the keyring from local DB and updates the displayed

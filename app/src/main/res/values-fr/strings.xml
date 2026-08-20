@@ -1867,4 +1867,6 @@ Vous pouvez aussi verrouiller l\'application derrière votre empreinte digitale 
     <string name="key_detail_detail_storage">Stockage</string>
     <string name="key_detail_detail_storage_software">Trousseau logiciel</string>
     <string name="key_detail_detail_storage_card">Carte de sécurité matérielle</string>
+    <string name="export_private_gpg_compat_label">Format compatible GnuPG</string>
+    <string name="export_private_gpg_compat_caption">Exporte la clé composite au format attendu par GnuPG (GPG4WIN), afin de pouvoir l\'importer là-bas. Laissez désactivé pour les autres applications.</string>
 </resources>

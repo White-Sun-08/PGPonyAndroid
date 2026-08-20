@@ -67,6 +67,12 @@ fun KeyringScreen(
 ) {
     val state by viewModel.state.collectAsState()
 
+    // CertainBot (RC4): a delete or trust change made on the Key Detail
+    // screen left this list stale until an app reload. The Keyring leaves
+    // composition when Key Detail is pushed, so re-querying on each entry
+    // (including the pop back) reflects those changes at once.
+    LaunchedEffect(Unit) { viewModel.reloadSilently() }
+
     // Snackbar for success/error
     val snackbarHostState = remember { SnackbarHostState() }
     LaunchedEffect(state.errorMessage) {

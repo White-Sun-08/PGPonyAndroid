@@ -274,7 +274,7 @@
     <string name="settings_about_openpgp_label">Стандарт OpenPGP</string>
     <string name="settings_about_openpgp_value">RFC 4880 + 9580</string>
     <string name="settings_about_crypto_label">Криптобиблиотека</string>
-    <string name="settings_about_crypto_value">Bouncy Castle 1.78.1</string>
+    <string name="settings_about_crypto_value">Bouncy Castle 1.85</string>
     <string name="settings_about_replay_onboarding_title">Показать вводный тур снова</string>
     <string name="settings_about_replay_onboarding_subtitle">Повторить вступление при первом запуске</string>
     <string name="settings_about_reset_tips_title">Сбросить подсказки</string>
@@ -1017,7 +1017,7 @@
     <string name="faq_a_biometric_lock">Биометрическая блокировка не даёт никому, кто возьмёт ваш разблокированный телефон, открыть PGPony без аутентификации по отпечатку или лицу.\n\nОна НЕ добавляет криптографической защиты вашим ключам — ваши закрытые ключи и так зашифрованы в покое. Биометрическая блокировка — это заслон на уровне интерфейса.\n\nВы также можете включить «Требовать для расшифровки», при которой биометрическая аутентификация запрашивается каждый раз при расшифровке сообщения. Используйте это, если беспокоитесь о том, что разблокированный телефон окажется в чужих руках.</string>
 
     <string name="faq_q_algorithms">Какие алгоритмы шифрования использует PGPony?</string>
-    <string name="faq_a_algorithms">Новые ключи по умолчанию используют Ed25519 для подписей и Curve25519 для шифрования — те же эллиптические кривые, что и в Signal, SSH и TLS 1.3.\n\nСообщения симметрично шифруются с помощью AES-256 в режиме AEAD OCB (RFC 9580), а сеансовый ключ шифруется на открытый ключ каждого получателя.\n\nPGPony также может читать и импортировать устаревшие ключи RSA и DSA для совместимости с более старыми установками OpenPGP, но для новых личностей генерирует только современные ключи на основе кривых.\n\nВся криптография выполняется библиотекой Bouncy Castle 1.78.1 — отраслевым стандартом, проверенным и используемым в корпоративных и государственных системах по всему миру.</string>
+    <string name="faq_a_algorithms">Новые ключи по умолчанию используют Ed25519 для подписей и Curve25519 для шифрования — те же эллиптические кривые, что и в Signal, SSH и TLS 1.3.\n\nСообщения симметрично шифруются с помощью AES-256 в режиме AEAD OCB (RFC 9580), а сеансовый ключ шифруется на открытый ключ каждого получателя.\n\nPGPony также может читать и импортировать устаревшие ключи RSA и DSA для совместимости с более старыми установками OpenPGP, но для новых личностей генерирует только современные ключи на основе кривых.\n\nВся криптография выполняется библиотекой Bouncy Castle 1.85 — отраслевым стандартом, проверенным и используемым в корпоративных и государственных системах по всему миру.</string>
 
     <!-- ════════════════════════════════════════════════════════════════
          MainActivity tabs — adds Contacts (was missing earlier)
@@ -1037,7 +1037,7 @@
     <string name="security_info_block_algorithms_body">Новые ключи используют Ed25519 для подписи и Curve25519 для шифрования — те же эллиптические кривые, что и в Signal, SSH и TLS 1.3. Симметричное шифрование использует AES-256 в режиме AEAD OCB (RFC 9580).</string>
 
     <string name="security_info_block_library_title">Построено на Bouncy Castle</string>
-    <string name="security_info_block_library_body">Вся криптография проходит через Bouncy Castle 1.78.1 — отраслевую стандартную Java-библиотеку криптографии, используемую в корпоративных и государственных системах по всему миру. PGPony не пишет собственную криптографию.</string>
+    <string name="security_info_block_library_body">Вся криптография проходит через Bouncy Castle 1.85 — отраслевую стандартную Java-библиотеку криптографии, используемую в корпоративных и государственных системах по всему миру. PGPony не пишет собственную криптографию.</string>
 
     <string name="security_info_block_on_device_title">Всё остаётся на вашем устройстве</string>
     <string name="security_info_block_on_device_body">Ваши ключи никогда не покидают телефон, если вы явно ими не поделитесь. У PGPony нет сервера, системы учётных записей и аналитики. Приложению не требуется разрешение на Интернет для базовых функций шифрования.</string>
@@ -1939,4 +1939,6 @@
     <string name="key_detail_detail_storage">Хранилище</string>
     <string name="key_detail_detail_storage_software">Программное хранилище ключей</string>
     <string name="key_detail_detail_storage_card">Аппаратная карта безопасности</string>
+    <string name="export_private_gpg_compat_label">Формат, совместимый с GnuPG</string>
+    <string name="export_private_gpg_compat_caption">Выводит составной ключ в том виде, который ожидает GnuPG (GPG4WIN), чтобы его можно было импортировать там. Для других приложений оставьте выключенным.</string>
 </resources>
