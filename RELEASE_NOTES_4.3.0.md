@@ -84,14 +84,14 @@ Keyring immediately instead of after an app restart. Found by CertainBot.
 Whole-file SHA-256 (is this download the published file):
 
 ```
-REPLACE_WITH_WHOLE_FILE_SHA256
+6b534dc4f96fd014d8475e3a05543f30aca07c14358537494a2fc07dd73dd61f
 ```
 
 Content hash (for rebuilders; excludes signature, see
 REPRODUCIBLE_BUILDS_PLAYBOOK.md):
 
 ```
-REPLACE_WITH_CONTENT_HASH
+cbb23ff8021f47604ebced73969b888a49979fbf5bb7461e0f0faac88f943504
 ```
 
 The APK is signed with the NorseHorse release key
